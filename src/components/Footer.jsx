@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { db } from "../firebase-config";
-import { collection, addDoc } from "firebase/firestore";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Logo from "../images/ALEMDAR_TEKNIK_LOGO.png";
+import { collection, addDoc } from "firebase/firestore";
 import {
   AiFillFacebook,
   AiFillTwitterSquare,
@@ -49,7 +49,7 @@ const Footer = () => {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="footer-menu">
               <Link to="/">
-              <img src={Logo} alt="logo" />
+                <img src={Logo} alt="logo" />
               </Link>
               <div className="social-links mt-5">
                 <ul className="d-flex list-unstyled gap-2">
@@ -175,21 +175,20 @@ const Footer = () => {
                 >
                   Subscribe
                 </button>
-                
               </form>
               {isSubmitted && (
-                  <div
-                    className={`alert alert-success`}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      marginTop: "10px"
-                    }}
-                  >
-                    {successMessage}
-                  </div>
-                )}
+                <div
+                  className={`alert alert-success`}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginTop: "10px",
+                  }}
+                >
+                  {successMessage}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -204,8 +203,9 @@ const FooterBottom = () => {
       <div className="container-fluid">
         <div className="row text-center">
           <div className="col-md copyright">
-            <p>© 2023 alemdar teknik ltd. All rights reserved.
-              made by <a href="https://teddywebdev.click/">teddy-webdev</a>
+            <p>
+              © 2023 alemdar teknik ltd. All rights reserved. made by{" "}
+              <a href="https://teddywebdev.click/">teddy-webdev</a>
             </p>
           </div>
         </div>
